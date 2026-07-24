@@ -1,0 +1,12 @@
+# Obsidian-specific
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/*/data.json  # Optional: ignore plugin-specific data if it changes too often
+.trash/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Plugin-specific (if using Obsidian Git)
+.obsidian-git-data
