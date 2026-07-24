@@ -10,3 +10,5 @@ Thumbs.db
 
 # Plugin-specific (if using Obsidian Git)
 .obsidian-git-data
+.vercel
+.env*
