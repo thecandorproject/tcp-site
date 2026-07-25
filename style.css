@@ -495,6 +495,7 @@ section+section {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  margin-bottom: 3rem;
 }
 
 .verify-doc-card {
@@ -556,15 +557,14 @@ section+section {
 }
 
 .verify-copy-btn {
-  font-family: 'Source Serif 4', serif;
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--accent);
   background: none;
   border: 1px solid var(--accent);
   border-radius: 3px;
-  padding: 0.15rem 0.45rem;
+  padding: 0.3rem;
   cursor: pointer;
   transition: color 0.15s, border-color 0.15s;
 }
