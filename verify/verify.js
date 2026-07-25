@@ -148,6 +148,11 @@ function renderDocumentCard(documentName, entries) {
   hashRow.appendChild(copyBtn);
   card.appendChild(hashRow);
 
+  const dateRow = document.createElement("div");
+  dateRow.className = "verify-row";
+  dateRow.innerHTML = `<span class="verify-row-label">Anchored ${formatConsensusTimestamp(current.consensusTimestamp)}</span>`;
+  card.appendChild(dateRow);
+
   const links = document.createElement("div");
   links.className = "verify-links";
   links.innerHTML = `
@@ -156,11 +161,6 @@ function renderDocumentCard(documentName, entries) {
     <a href="${current.source_url}" target="_blank" rel="noopener">Download PDF</a>
   `;
   card.appendChild(links);
-
-  const instructions = document.createElement("p");
-  instructions.className = "verify-instructions";
-  instructions.innerHTML = `Download the PDF, run <code>shasum -a 256 filename.pdf</code>, and compare the result to the hash above. If they match, this is exactly what was anchored on ${formatConsensusTimestamp(current.consensusTimestamp)}.`;
-  card.appendChild(instructions);
 
   if (history.length > 0) {
     const details = document.createElement("details");

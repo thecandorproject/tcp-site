@@ -491,6 +491,41 @@ section+section {
   font-style: italic;
 }
 
+.verify-howto {
+  max-width: 680px;
+  margin-bottom: 2.2rem;
+}
+
+.verify-howto summary {
+  font-size: 0.85rem;
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 400;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+  display: inline-block;
+  transition: color 0.15s;
+}
+
+.verify-howto summary:hover {
+  color: var(--accent-lt);
+}
+
+.verify-howto p {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--ink-mid);
+  line-height: 1.65;
+}
+
+.verify-howto code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+  background: var(--rule);
+  padding: 0.05rem 0.3rem;
+  border-radius: 2px;
+}
+
 .verify-doc-list {
   display: flex;
   flex-direction: column;
@@ -562,16 +597,16 @@ section+section {
   justify-content: center;
   color: var(--accent);
   background: none;
-  border: 1px solid var(--accent);
+  border: none;
   border-radius: 3px;
   padding: 0.3rem;
   cursor: pointer;
-  transition: color 0.15s, border-color 0.15s;
+  transition: color 0.15s, background 0.15s;
 }
 
 .verify-copy-btn:hover {
   color: var(--accent-lt);
-  border-color: var(--accent-lt);
+  background: rgba(139, 58, 42, 0.08);
 }
 
 .verify-links {
@@ -580,22 +615,6 @@ section+section {
   gap: 1.2rem;
   flex-wrap: wrap;
   font-size: 0.78rem;
-}
-
-.verify-instructions {
-  margin-top: 0.9rem;
-  font-size: 0.78rem;
-  color: var(--ink-light);
-  font-style: italic;
-  line-height: 1.6;
-}
-
-.verify-instructions code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-style: normal;
-  background: var(--rule);
-  padding: 0.05rem 0.3rem;
-  border-radius: 2px;
 }
 
 .verify-history {

@@ -45,6 +45,23 @@
         Hedera's own public mirror node reports.
       </p>
 
+      <p class="verify-intro">
+        The hash shown for each document below is a unique digital fingerprint of its exact contents.
+        Change even a single character and the fingerprint changes completely — so if your copy's
+        fingerprint matches the one shown here, you can be certain it's exactly what was published,
+        unaltered.
+      </p>
+
+      <details class="verify-howto">
+        <summary>How to check a document's fingerprint yourself</summary>
+        <p>
+          Download the PDF, then run this command in a terminal (Mac/Linux: <code>shasum -a 256
+            filename.pdf</code>, Windows: <code>certutil -hashfile filename.pdf SHA256</code>), and
+          compare the result to the hash shown for that document. If they match exactly, your copy is
+          identical to what was anchored.
+        </p>
+      </details>
+
       <p id="verify-status" class="verify-status">Querying the Hedera mirror node…</p>
 
       <div id="verify-doc-list" class="verify-doc-list"></div>
