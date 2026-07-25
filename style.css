@@ -408,21 +408,11 @@ section+section {
   border-bottom: none;
 }
 
-.changelog-version {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.version-label {
+.changelog-date {
   font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.version-date {
-  color: #666;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
 }
 
 .changelog-items {
