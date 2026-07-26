@@ -3,7 +3,7 @@
 // topic ID at cutover.
 const CONFIG = {
   network: "testnet",
-  topicId: "0.0.9695525",
+  topicId: "0.0.9763239",
 };
 
 const MIRROR_BASE =

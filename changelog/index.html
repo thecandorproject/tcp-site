@@ -29,48 +29,24 @@
       <p class="tagline small">
         A record of changes to The Candor Project's published documents and framework.
         Additions expand the framework; revisions modify existing content.
-        The rationale for each substantive change is noted.
+        This timeline is pulled live from the same Hedera anchoring system behind
+        <a class="changelog-link" href="/verify">/verify</a> — each entry links to independent proof of when it was
+        recorded.
       </p>
     </div>
   </header>
 
   <main>
     <div class="container changelog">
-      <section class="lede">
-        <div class="changelog-entry">
-          <div class="changelog-date">June 2026</div>
-          <ul class="changelog-items">
-            <li>
-              <span class="change-type addition">Addition</span>
-              <span class="change-desc">Published <em>Methodology and Evidentiary Standards</em>, the operational
-                companion to the white paper. The methodology document defines the evidentiary standards, exclusion
-                categories, knowledge requirements, and appeals process that govern every finding the oversight body
-                produces. Its publication completes the Phase 1 document set.</span>
-            </li>
-            <li>
-              <span class="change-type revision">Revision</span>
-              <span class="change-desc">White paper, Oversight Body Architecture section: replaced "legally admissible
-                public record" with "formally documented and publicly verifiable record." The original phrase implied a
-                specific procedural context the framework does not yet occupy. The revised language accurately describes
-                the oversight body's output and is consistent with the terminology used throughout the methodology
-                document.</span>
-            </li>
-          </ul>
-        </div>
 
-        <div class="changelog-entry">
-          <div class="changelog-date">April 2026</div>
-          <ul class="changelog-items">
-            <li>
-              <span class="change-type addition">Addition</span>
-              <span class="change-desc">Initial publication of the framework. Published documents: <em>Epistemic
-                  Accountability and the Constitution: A Framework for Professional Truth Standards in Public Life</em>
-                (white paper); <em>The Missing Standard: A Professional Accountability Framework for Politicians and the
-                  Press</em> (public explainer); and the one-pager.</span>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <div id="changelog-banner" class="verify-banner" hidden>
+        This page currently points at Hedera <strong>testnet</strong> — a free practice network, not the
+        permanent public record. Nothing shown below carries legal or evidentiary weight yet.
+      </div>
+
+      <p id="changelog-status" class="verify-status">Querying the Hedera mirror node…</p>
+
+      <div id="changelog-list" class="changelog-list"></div>
 
     </div>
 
@@ -92,6 +68,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="/changelog/changelog.js"></script>
 
 </body>
 
