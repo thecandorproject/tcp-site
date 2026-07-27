@@ -18,4 +18,4 @@ This repo contains the source code for the public-facing website hosted at `thec
 ## Contact
  
 Erik Muir, Founder
-erik@thecandorproject.org
+erik.muir@thecandorproject.org

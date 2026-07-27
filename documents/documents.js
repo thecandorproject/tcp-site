@@ -1,6 +1,9 @@
 // Page-level config only — everything else on this page comes from the
 // Hedera mirror node at request time. Updated to "mainnet" + the mainnet
 // topic ID at cutover.
+// topicId must stay in this repo's tracked source — it's the only place
+// this system stays discoverable if it's ever challenged, since it isn't
+// documented anywhere else on the site.
 const CONFIG = {
   network: "testnet",
   topicId: "0.0.9763239",
@@ -135,7 +138,7 @@ async function main() {
   } catch (err) {
     console.error(err);
     statusEl.textContent =
-      "Could not reach the Hedera mirror node right now. Try refreshing in a moment.";
+      "Could not load the current versions right now. Try refreshing in a moment.";
   }
 }
 

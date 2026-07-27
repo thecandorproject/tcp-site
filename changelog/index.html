@@ -28,9 +28,7 @@
       <h1 class="centered">Change Log</h1>
       <p class="tagline small">
         A record of changes to The Candor Project's published documents and framework.
-        Additions expand the framework; revisions modify existing content.
-        Every entry below is a cryptographic fingerprint anchored to Hedera, a public ledger — pulled live from
-        that network, not from any database this project maintains. See
+        Additions expand the framework; revisions modify existing content. See
         <a class="changelog-link" href="/documents">/documents</a> to read the current version of each document.
       </p>
     </div>
@@ -40,21 +38,21 @@
     <div class="container changelog">
 
       <div id="changelog-banner" class="verify-banner" hidden>
-        This page currently points at Hedera <strong>testnet</strong> — a free practice network, not the
-        permanent public record. Nothing shown below carries legal or evidentiary weight yet.
+        This page currently reflects a <strong>test environment</strong>, not the permanent public record.
+        Nothing shown below carries legal or evidentiary weight yet.
       </div>
 
       <details class="verify-howto">
         <summary>How to check a version yourself</summary>
         <p>
-          Download it via its IPFS link below, then run this command in a terminal (Mac/Linux:
-          <code>shasum -a 256 filename.pdf</code>, Windows: <code>certutil -hashfile filename.pdf
-            SHA256</code>), and compare the result to the hash shown for that entry. If they match exactly,
-          your copy is identical to what was anchored.
+          Once you've downloaded the file, click "Checksum" next to the entry to copy its hash, then run this
+          command in a terminal (Mac/Linux: <code>shasum -a 256 filename.pdf</code>, Windows:
+          <code>certutil -hashfile filename.pdf SHA256</code>) and compare the result to it. If they match
+          exactly, your copy is identical to the published file.
         </p>
       </details>
 
-      <p id="changelog-status" class="verify-status">Querying the Hedera mirror node…</p>
+      <p id="changelog-status" class="verify-status">Loading changelog…</p>
 
       <div id="changelog-list" class="changelog-list"></div>
 

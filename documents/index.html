@@ -33,19 +33,7 @@
   <main>
     <div class="container">
 
-      <details class="verify-howto">
-        <summary>How we keep these documents tamper-evident</summary>
-        <p>
-          Each document below is hashed, pinned to IPFS, and anchored to the Hedera Consensus Service — a
-          public, independently timestamped ledger. This page queries that network directly, live, at load
-          time; nothing below is read from any database this project maintains. The hash shown for each
-          document is a unique digital fingerprint of its exact contents — change even a single character
-          and the fingerprint changes completely. For a document's fingerprint and instructions to check it
-          yourself, see the <a href="/changelog">changelog</a>.
-        </p>
-      </details>
-
-      <p id="documents-status" class="verify-status">Querying the Hedera mirror node…</p>
+      <p id="documents-status" class="verify-status">Loading current versions…</p>
 
       <div id="documents-list" class="verify-doc-list"></div>
 
