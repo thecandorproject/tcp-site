@@ -1,0 +1,47 @@
+{
+  "documentOrder": ["white-paper", "methodology", "explainer", "one-pager"],
+  "documents": {
+    "white-paper": {
+      "label": "White Paper",
+      "description": "Full legal and policy analysis, including First Amendment doctrine, oversight architecture, and methodology. Written for academics, constitutional lawyers, and serious policy researchers."
+    },
+    "methodology": {
+      "label": "Methodology and Evidentiary Standards",
+      "description": "Operational companion to the white paper. Defines the evidentiary standards, exclusion categories, knowledge requirements, and appeals process that govern every finding the oversight body produces. Written for legal and academic audiences, with worked examples from both tracks and both parties."
+    },
+    "explainer": {
+      "label": "Public Explainer",
+      "description": "A full narrative explanation of the problem, the framework, and the case for it — written for an educated general audience without policy jargon."
+    },
+    "one-pager": {
+      "label": "One-Pager",
+      "description": "A single-page summary of the problem and solution, suitable for a first conversation with a potential ally, partner, or donor."
+    }
+  },
+  "versions": {
+    "white-paper-1.0": {
+      "historicalDate": "2026-04-12T20:56:46Z",
+      "comment": "Initial publication of the white paper, “Epistemic Accountability and the Constitution: A Framework for Professional Truth Standards in Public Life.”"
+    },
+    "white-paper-1.1": {
+      "historicalDate": "2026-06-19T01:28:45Z",
+      "comment": "Oversight Body Architecture section: replaced “legally admissible public record” with “formally documented and publicly verifiable record.” The original phrase implied a specific procedural context the framework does not yet occupy. The revised language accurately describes the oversight body's output and is consistent with the terminology used throughout the methodology document."
+    },
+    "explainer-1.0": {
+      "historicalDate": "2026-04-12T03:50:27Z",
+      "comment": "Initial publication of the public explainer, “The Missing Standard: A Professional Accountability Framework for Politicians and the Press.”"
+    },
+    "explainer-1.1": {
+      "historicalDate": "2026-04-16T04:07:43Z",
+      "comment": "Oversight Body Architecture section: replaced “a design that makes abuse impossible” with “a design whose constraints don't depend on the goodwill of the people inside it.” No design actually makes abuse impossible; the revised language claims only what the architecture can back up."
+    },
+    "one-pager-1.0": {
+      "historicalDate": "2026-04-12T03:50:27Z",
+      "comment": "Initial publication of the one-pager, a single-page distillation of the framework for readers who want the argument without the full white paper."
+    },
+    "methodology-1.0": {
+      "historicalDate": "2026-06-19T01:28:45Z",
+      "comment": "Published Methodology and Evidentiary Standards, the operational companion to the white paper. The methodology document defines the evidentiary standards, exclusion categories, knowledge requirements, and appeals process that govern every finding the oversight body produces. Its publication completes the Phase 1 document set."
+    }
+  }
+}

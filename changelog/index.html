@@ -29,9 +29,9 @@
       <p class="tagline small">
         A record of changes to The Candor Project's published documents and framework.
         Additions expand the framework; revisions modify existing content.
-        This timeline is pulled live from the same Hedera anchoring system behind
-        <a class="changelog-link" href="/verify">/verify</a> — each entry links to independent proof of when it was
-        recorded.
+        Every entry below is a cryptographic fingerprint anchored to Hedera, a public ledger — pulled live from
+        that network, not from any database this project maintains. See
+        <a class="changelog-link" href="/documents">/documents</a> to read the current version of each document.
       </p>
     </div>
   </header>
@@ -43,6 +43,16 @@
         This page currently points at Hedera <strong>testnet</strong> — a free practice network, not the
         permanent public record. Nothing shown below carries legal or evidentiary weight yet.
       </div>
+
+      <details class="verify-howto">
+        <summary>How to check a version yourself</summary>
+        <p>
+          Download it via its IPFS link below, then run this command in a terminal (Mac/Linux:
+          <code>shasum -a 256 filename.pdf</code>, Windows: <code>certutil -hashfile filename.pdf
+            SHA256</code>), and compare the result to the hash shown for that entry. If they match exactly,
+          your copy is identical to what was anchored.
+        </p>
+      </details>
 
       <p id="changelog-status" class="verify-status">Querying the Hedera mirror node…</p>
 
@@ -63,7 +73,7 @@
         <div class="version-note">
           The Candor Project<br />
           <a class="changelog-link" href="/">Home</a> ·
-          <a class="changelog-link" href="/verify">Verify</a>
+          <a class="changelog-link" href="/documents">Documents</a>
         </div>
       </div>
     </div>
