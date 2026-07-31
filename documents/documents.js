@@ -6,7 +6,7 @@
 // documented anywhere else on the site.
 const CONFIG = {
   network: "testnet",
-  topicId: "0.0.9763239",
+  topicId: "0.0.9859828",
 };
 
 const MIRROR_BASE =
