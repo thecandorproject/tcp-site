@@ -142,10 +142,9 @@ function renderEntry(entry, metadata) {
     </div>
     <p class="change-desc">${comment}</p>
     <div class="verify-row">
-      <button class="checksum-link" type="button">Checksum</button>
-    </div>
-    <div class="verify-links">
       ${versionLink}
+      <span class="verify-sep">·</span>
+      <button class="checksum-link" type="button">Checksum</button>
     </div>
   `;
 
