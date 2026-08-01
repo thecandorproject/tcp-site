@@ -107,15 +107,22 @@ function buildTimeline(rawMessages) {
 
 function copyChecksum(hash, button) {
   navigator.clipboard.writeText(hash).then(() => {
-    const original = button.textContent;
-    button.textContent = "Copied.";
-    button.classList.add("copied");
-    button.disabled = true;
-    setTimeout(() => {
-      button.textContent = original;
-      button.classList.remove("copied");
-      button.disabled = false;
-    }, 3000);
+    button.textContent = hash;
+    button.classList.add("revealed");
+
+    let badge = button.nextElementSibling;
+    if (!badge?.classList.contains("copied-badge")) {
+      badge = document.createElement("span");
+      badge.className = "copied-badge";
+      badge.textContent = "Copied";
+      button.insertAdjacentElement("afterend", badge);
+    }
+
+    clearTimeout(badge._hideTimeout);
+    badge.classList.remove("visible");
+    void badge.offsetWidth; // restart the fade-in transition on repeat clicks
+    badge.classList.add("visible");
+    badge._hideTimeout = setTimeout(() => badge.classList.remove("visible"), 1500);
   });
 }
 
@@ -143,8 +150,9 @@ function renderEntry(entry, metadata) {
     <p class="change-desc">${comment}</p>
     <div class="verify-row">
       ${versionLink}
-      <span class="verify-sep">·</span>
-      <button class="checksum-link" type="button">Checksum</button>
+      <span class="checksum-wrap">
+        <button class="checksum-link" type="button">Checksum</button>
+      </span>
     </div>
   `;
 
