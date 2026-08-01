@@ -5,8 +5,8 @@
 // this system stays discoverable if it's ever challenged, since it isn't
 // documented anywhere else on the site.
 const CONFIG = {
-  network: "testnet",
-  topicId: "0.0.9859828",
+  network: "mainnet",
+  topicId: "0.0.10788409",
 };
 
 const MIRROR_BASE =
