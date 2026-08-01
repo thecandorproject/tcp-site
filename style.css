@@ -376,12 +376,24 @@ section+section {
 
 .changelog-row {
   padding-bottom: 2.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   border-bottom: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background-color 0.6s ease;
+  scroll-margin-top: 5rem;
 }
 
 .changelog-row:last-child {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+.changelog-row.highlight {
+  background-color: rgba(139, 58, 42, 0.08);
 }
 
 .changelog-row-header {
@@ -453,6 +465,10 @@ section+section {
   font-size: 0.85rem;
   color: var(--ink-light);
   font-style: italic;
+}
+
+.status-top {
+  margin-top: 2rem;
 }
 
 .verify-howto {

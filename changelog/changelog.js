@@ -187,7 +187,15 @@ async function main() {
     // misses them — the target doesn't exist yet at that point. Do it
     // ourselves once the real content is in the DOM.
     if (location.hash) {
-      document.getElementById(location.hash.slice(1))?.scrollIntoView();
+      const target = document.getElementById(location.hash.slice(1));
+      target?.scrollIntoView();
+      if (target) {
+        // Add on the next frame so the browser registers the un-highlighted
+        // state first — otherwise there's nothing for the transition to
+        // animate from and the highlight would just appear instantly.
+        requestAnimationFrame(() => target.classList.add("highlight"));
+        setTimeout(() => target.classList.remove("highlight"), 2500);
+      }
     }
   } catch (err) {
     console.error(err);
