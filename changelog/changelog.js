@@ -145,14 +145,16 @@ function renderEntry(entry, metadata) {
     <div class="changelog-row-header">
       <span class="change-type ${changeTypeClass}">${entry.changeType}</span>
       <span class="changelog-row-title">${metadata.documents[entry.document].label} — Version ${entry.version}</span>
-      <span class="changelog-row-date">Published ${publishDate(entry, metadata)}</span>
     </div>
     <p class="change-desc">${comment}</p>
-    <div class="verify-row">
-      ${versionLink}
-      <span class="checksum-wrap">
-        <button class="checksum-link" type="button">Checksum</button>
+    <div class="changelog-footer">
+      <span class="changelog-footer-links">
+        ${versionLink}
+        <span class="checksum-wrap">
+          <button class="checksum-link" type="button">Checksum</button>
+        </span>
       </span>
+      <span class="changelog-row-date">Published ${publishDate(entry, metadata)}</span>
     </div>
   `;
 
